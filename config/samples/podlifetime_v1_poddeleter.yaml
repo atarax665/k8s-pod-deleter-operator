@@ -1,0 +1,9 @@
+apiVersion: podlifetime.atarax.local/v1
+kind: PodDeleter
+metadata:
+  labels:
+    app.kubernetes.io/name: pod-lifetime-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: poddeleter-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,23 @@
+# permissions for end users to view poddeleters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: pod-lifetime-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: poddeleter-viewer-role
+rules:
+- apiGroups:
+  - podlifetime.atarax.local
+  resources:
+  - poddeleters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - podlifetime.atarax.local
+  resources:
+  - poddeleters/status
+  verbs:
+  - get

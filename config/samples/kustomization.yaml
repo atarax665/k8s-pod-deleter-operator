@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- podlifetime_v1_poddeleter.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
